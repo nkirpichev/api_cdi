@@ -8,7 +8,6 @@ use App\Entity\Auteur;
 use App\Entity\Categorie;
 use App\Entity\Ouvrage;
 use Faker\Factory as FakerFactory;
-use Fakerphp\Faker\Factory;
 
 class AppFixtures extends Fixture
 {
@@ -43,7 +42,6 @@ class AppFixtures extends Fixture
             $manager->persist($auteurs[$i]);
 
         }
-
 
         $manager->flush();
     }
